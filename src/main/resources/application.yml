@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: MJ_Exam_SSO
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mj_zas?useUnicode=true&useSSL=true&characterEncoding=utf-8&serverTimezone=GMT
+    username: root
+    password: admin
+
+
+mybatis:
+  type-aliases-package: com.mj.entity
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
